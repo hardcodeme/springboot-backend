@@ -16,7 +16,7 @@ public class EmployeeController {
     private Employee_Repository employeeRepository;
 
 //get all employees
-    @GetMapping("/employees")
+    @GetMapping("/all_employees")
     public List<Employee> getAllEmployees(){
         return employeeRepository.findAll();
     }
